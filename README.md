@@ -2,6 +2,8 @@
 
 **Stack Cats** (abbreviated as **SKS**) is a stack-based, [reversible](https://en.wikipedia.org/wiki/Reversible_computing) (esoteric) programming language. It was originally conceived of [for a language-design challenge on Code Golf Stack Exchange](http://codegolf.stackexchange.com/q/61804/8478), but later designed and developed independently of that.
 
+The language is available on [Try it online!](http://stackcats.tryitonline.net) by @DennisMitchell.
+
 ## Basics
 
 Every program in Stack Cats is written on a single line, where each character is a command. Being a reversible programming language means that for every command there is a way to undo it. The language is designed such that any snippet of commands can be undone by *mirroring* it. This means that the string of commands is reversed and all characters that come in symmetric pairs are swapped (`()`, `{}`, `[]`, `<>`, `\/`). For instance, the snippet `>[[(!-)/` undoes the snippet `\(-!)]]<`. Therefore, Stack Cats programs are made up exclusively of characters which are either self-symmetric (in most fonts) like `-_|!:I` or which come in pairs, i.e. `(){}[]<>\/`. Note that from a theoretical standpoint, self-symmetric characters compute [involutions](https://en.wikipedia.org/wiki/Involution_(mathematics)), while symmetric pairs compute [bijections](https://en.wikipedia.org/wiki/Bijection) (and their inverses).
